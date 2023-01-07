@@ -9,7 +9,7 @@ sum(1,3);
 
 //Es un lenguaje orientado a objetos
 class Person{
-    constructor(private age: number, public lastName: string){}
+    constructor(public age: number, public lastName: string){}
 }
 
 const nico = new Person(15, "Molina");
