@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { empty } from 'rxjs';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +18,39 @@ export class AppComponent {
   }
   names: String[] = ['Ulises', 'Nicolas', 'Julian'];
   newName = '';
+  products: Product[] = [
+    {
+      name: 'EL mejor juguete',
+      price: 565,
+      image: './assets/images/toy.jpg',
+      category: 'all',
+    },
+    {
+      name: 'Bicicleta casi nueva',
+      price: 356,
+      image: './assets/images/bike.jpg'
+    },
+    {
+      name: 'Colleción de albumnes',
+      price: 34,
+      image: './assets/images/album.jpg'
+    },
+    {
+      name: 'Mis libros',
+      price: 23,
+      image: './assets/images/books.jpg'
+    },
+    {
+      name: 'Casa para perro',
+      price: 34,
+      image: './assets/images/house.jpg'
+    },
+    {
+      name: 'Gafas',
+      price: 3434,
+      image: './assets/images/glasses.jpg'
+    }
+  ]
   //Reto ngFOR
   stockItems: {id: number, name: string, qty: number | undefined, price: number | undefined, SKU: number | undefined}[] = [
     {
