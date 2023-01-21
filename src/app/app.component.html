@@ -22,7 +22,7 @@
 <p>la persona es camilo</p> -->
 <hr>
 <h1>*ngFor</h1>
-<div>
+<div class="products--grid">
   <div *ngFor="let product of products">
     <img width="250px" [src]="product.image" alt="image">
     <h2>{{product.price}}</h2>
@@ -40,6 +40,9 @@
     <button (click)="deleteName(i)">Delete</button>
   </li>
 </ul>
+<!----------->
+<!-- RETO -->
+<!----------->
 <h1>RETO ngFor</h1>
 <h2>Inventario</h2>
 <label for="">Nombre del Producto: </label>
@@ -114,4 +117,4 @@
 <h2>{{'Hola Mundo'.repeat(5)}}</h2>
 <p>3 + 3 = {{3 + 3}}</p>
 <h3>Hola, soy {{name}} y tengo {{age}}</h3>
-<img src={{img}} alt="">
+<img width="200" src={{img}} alt="">
