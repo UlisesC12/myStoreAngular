@@ -12,6 +12,11 @@ export class AppComponent {
   age = 18;
   img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png';
   btnDisabled = true;
+  register = {
+    name: '',
+    email: '',
+    password: '',
+  }
   person = {
     name: "Ulises",
     age: 18,
@@ -124,6 +129,10 @@ export class AppComponent {
   }
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister() {
+    console.log(this.register);
   }
 
 }
